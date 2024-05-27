@@ -1,0 +1,135 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body > header {
+    background-color: #2f3640;
+    padding: 16px 0;
+    color: #f5f6fa;
+}
+
+header .container {
+    display: flex; 
+    align-items: center;
+    justify-content: space-between;
+
+}
+header li {
+    display: inline;   
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    margin-left: 16px;
+}
+
+header li a {
+    color: #f5f6fa;
+    text-decoration: none;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.articles {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.articles article img {
+    /* height: 180px; */
+    max-height: 230px;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.articles article {
+    width: 30%;
+}
+
+section {
+    padding: 16px 0;
+}
+
+section h2,
+.articles article {
+    margin-bottom: 16px;
+}
+
+.articles article h3 {
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.articles article a {
+    background-color: rgb(3, 35, 69);
+    border-radius: 10px;
+    color: white;
+    padding: 8px;
+    display: inline-block;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 8px;
+}
+
+.articles article a:hover {
+    text-decoration: underline;
+}
+
+.articles article p,
+.articles article a {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.articles article h3 {
+    font-size: 24px;
+}
+
+section h2 {
+    font-size: 32px;
+}
+
+#sports {
+    background-color: rgba(75, 117, 75, 0.235);
+}
+
+#sports .articles article a {
+    background-color: #008894;
+}
+
+#economy {
+    background-color: #fbf38247;
+}
+
+#economy .articles article a {
+    background-color: #f78d02;
+}
+
+.creation-date {
+    color: #24282d;
+    font-size: 13px;
+}
+
+#tecnology {
+    background-color: rgba(248, 226, 200, 0.549);
+}
+
+#tecnology .articles article a {
+    background-color: rgb(114, 77, 37);;
+}
+
+#entertain {
+    background-color: rgba(47, 79, 79, 0.249);
+}
+
+#entertain .articles article a {
+    background-color: darkslategrey;
+}
+
+#topo {
+    background-color:rgba(47, 79, 79, 0.249) ;
+}
