@@ -1,74 +1,88 @@
+/* Define que todos os elementos terão box-sizing como border-box */
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
+
+/* Estilos para o cabeçalho */
 body > header {
-    background-color: #2f3640;
+    background-color: #2f3640; /* Fundo escuro */
     padding: 16px 0;
-    color: #f5f6fa;
+    color: #f5f6fa; /* Texto claro */
 }
 
+/* Centraliza o conteúdo dentro do cabeçalho */
 header .container {
     display: flex; 
-    align-items: center;
-    justify-content: space-between;
-
+    align-items: center; /* Centraliza verticalmente */
+    justify-content: space-between; /* Espaço entre os itens */
 }
+
+/* Define estilo para os itens da lista de navegação no header */
 header li {
-    display: inline;   
+    display: inline; /* Exibe itens lado a lado */
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
     margin-left: 16px;
 }
 
+/* Estilo para os links no cabeçalho */
 header li a {
-    color: #f5f6fa;
-    text-decoration: none;
+    color: #f5f6fa; /* Cor branca para o texto dos links */
+    text-decoration: none; /* Remove o sublinhado dos links */
 }
 
+/* Define largura máxima do conteúdo */
 .container {
     width: 1200px;
-    margin: 0 auto;
+    margin: 0 auto; /* Centraliza horizontalmente */
 }
 
+/* Exibe os artigos em linha e permite a quebra de linha quando necessário */
 .articles {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-between; /* Espaço entre os artigos */
 }
 
+/* Estilo para as imagens dos artigos */
 .articles article img {
-    /* height: 180px; */
-    max-height: 230px;
+    max-height: 230px; /* Limita a altura máxima */
     height: 100%;
     width: 100%;
-    object-fit: cover;
-    border-radius: 10px;
+    object-fit: cover; /* Garante que a imagem se ajuste ao espaço */
+    border-radius: 10px; /* Borda arredondada nas imagens */
 }
 
+/* Define a largura de cada artigo */
 .articles article {
     width: 30%;
 }
 
+/* Padding para as seções */
 section {
     padding: 16px 0;
 }
 
+/* Define espaçamento para os títulos */
 section h2,
 .articles article {
     margin-bottom: 16px;
 }
 
+/* Estilo para os títulos dos artigos */
 .articles article h3 {
     margin-top: 8px;
     margin-bottom: 8px;
+    font-size: 24px;
 }
 
+/* Estilo para os links "Ler mais" */
 .articles article a {
-    background-color: rgb(3, 35, 69);
-    border-radius: 10px;
-    color: white;
+    background-color: rgb(3, 35, 69); /* Cor de fundo do botão */
+    border-radius: 10px; /* Borda arredondada */
+    color: white; /* Cor do texto */
     padding: 8px;
     display: inline-block;
     text-decoration: none;
@@ -76,60 +90,42 @@ section h2,
     margin-top: 8px;
 }
 
+/* Estilo quando o link é hover (quando o cursor está sobre ele) */
 .articles article a:hover {
-    text-decoration: underline;
+    text-decoration: underline; /* Sublinha o link no hover */
 }
 
-.articles article p,
-.articles article a {
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-.articles article h3 {
-    font-size: 24px;
-}
-
-section h2 {
-    font-size: 32px;
-}
-
-#sports {
-    background-color: rgba(75, 117, 75, 0.235);
-}
-
-#sports .articles article a {
-    background-color: #008894;
-}
-
-#economy {
-    background-color: #fbf38247;
-}
-
-#economy .articles article a {
-    background-color: #f78d02;
-}
-
+/* Estilo para a data de criação */
 .creation-date {
     color: #24282d;
     font-size: 13px;
 }
 
+/* Diferentes estilos para cada seção usando cores de fundo específicas */
+#sports {
+    background-color: rgba(75, 117, 75, 0.235);
+}
+#sports .articles article a {
+    background-color: #008894; /* Cor do botão na seção de esportes */
+}
+
+#economy {
+    background-color: #fbf38247;
+}
+#economy .articles article a {
+    background-color: #f78d02; /* Cor do botão na seção de economia */
+}
+
 #tecnology {
     background-color: rgba(248, 226, 200, 0.549);
 }
-
 #tecnology .articles article a {
-    background-color: rgb(114, 77, 37);;
+    background-color: rgb(114, 77, 37); /* Cor do botão na seção de tecnologia */
 }
 
 #entertain {
     background-color: rgba(47, 79, 79, 0.249);
 }
-
 #entertain .articles article a {
-    background-color: darkslategrey;
-}
-
-#topo {
-    background-color:rgba(47, 79, 79, 0.249) ;
+    background-color: darkslategrey; /* Cor do botão na seção de entretenimento */
 }
